@@ -1,0 +1,34 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+  int choice;
+  double fahr, cel;
+  cout<<"select conversion type: \n 1. Celsius to Frahenheit\n 2. Fahrenheit to celsuis\n Your Choice: ";
+  cin>>choice;
+  if(choice==1|2)
+  
+{
+	switch(choice){
+		case 1:
+		    cout<<"Enter temperature in Celsius:  ";
+			cin>>cel;
+			fahr=(cel*9/5)+32;
+			cout<<"Temperature in Fahrenhiet:  "<<fahr<<endl;
+			break;
+			case 2:
+			cout<<"Enter temperature in Fahrenhiet:  ";
+		   	cin>>fahr;
+			cel=(fahr-32)*5/9;
+			cout<<"Temperature in Celsius :  "<<cel<<endl;
+			break;
+			}
+  
+}else{
+	 cout << "Error: Please choose from the options given above (1 or 2)." << endl;
+}
+
+return 0;
+}
+
