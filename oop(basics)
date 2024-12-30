@@ -1,0 +1,46 @@
+#include<iostream>
+
+using namespace std;
+
+class Employee{
+	public:
+		
+	string name, companyName;
+	int age;
+	void getInput(){
+    cout<<"Enter Name:  ";
+    cin>>name;
+    cout<<"Enter Company Name:  ";
+    cin>>companyName;
+    cout<<"Enter your age:  ";
+    cin>>age;
+	}
+	void introduction(){
+    cout<<" Name of the Employee  "<<name<<".\n Age of the Employee is "<<age<<".\n The company Employee works in "<<companyName<<endl;
+}
+     Employee(){
+     	name= "  ";
+     	companyName="  ";
+     	age =0;
+	 }
+     Employee(string Name, string CompanyName, int Age)
+     {
+     	name= Name;
+     	companyName = CompanyName;
+     	age =Age;
+	 }
+};
+int main(){
+	int num;
+	Employee e1;
+    e1.name ="steve";
+    e1.companyName="cyberforce";
+    e1.age=20;
+    e1.introduction();
+    Employee e2;
+    e2.getInput();
+    e2.introduction();
+    Employee e3 = Employee("barbara", "youtube", 25);
+    e3.introduction();
+   	
+}
