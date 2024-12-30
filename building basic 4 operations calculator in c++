@@ -1,0 +1,46 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+  int num1, num2;
+  char a;
+  cout<<"Enter the first number:   ";
+  cin>>num1;
+  cout<<"\nEnter the Operation from four basic operations + - * /:    ";
+  cin>>a;
+ 	cout<<"\nEnter the second number:     ";
+    cin>>num2;
+    
+    if(a== '+')
+    {
+    	cout<<"\nThe sum is "<<num1+num2;
+    	
+	}
+	 else if(a== '-')
+    {
+    	cout<<"\nThe difference is "<<num1-num2;
+    	
+	}
+	else if (a=='*')
+	{
+		cout<<"\nThe product is "<<num1*num2;
+		
+	}
+	else if (a=='/'){
+		
+	
+	if( num2!=0)
+	{
+		cout<<"\nThe division is "<<static_cast<double> (num1)/num2;
+}
+else
+cout<<"Zero in denominator gives infinity";
+}
+
+	else{	
+		cout<<"\ninvalid operation";
+
+}
+}
+
